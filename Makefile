@@ -319,7 +319,7 @@ endif
 # This (the first rule) must depend on "all".
 default: all
 
-WARNING_FLAGS = -W -Wextra -Wall -Wsign-compare -Wshadow \
+WARNING_FLAGS = -W -Wextra -Wall -Wsign-compare -Wno-shadow \
   -Wunused-parameter
 
 ifeq ($(PLATFORM), OS_OPENBSD)
